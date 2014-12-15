@@ -2,7 +2,7 @@
  * Module dependencies.
  */
 
-var search = require('@local/search');
+var search = require('@wrk-docs/search');
 var slugify = require('slugificate');
 var react = require('react');
 

@@ -4,7 +4,7 @@
  * Module dependencies
  */
 
-var sidebar = require('@local/sidebar');
+var sidebar = require('@wrk-docs/sidebar');
 var react = require('react');
 var dom = react.DOM;
 

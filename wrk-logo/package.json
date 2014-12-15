@@ -1,5 +1,5 @@
 {
-  "name": "@local/wercker-logo",
+  "name": "@wrk/logo",
   "version": "1.0.0",
   "browserify": {
     "transform": ["brfs"]

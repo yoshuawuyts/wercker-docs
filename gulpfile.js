@@ -39,8 +39,8 @@ module.exports = gulp;
 
 var jsFiles = [
   '*.js*',
-  'local_modules/**/*.js*',
-  '!local_modules/**/node_modules/*.js*'
+  './**/*.js*',
+  '!./**/node_modules/*.js*'
 ];
 
 var moduleEntryPoint = [
@@ -54,10 +54,10 @@ var docs = [
 
 var styleFiles = [
   'node_modules/css-wipe/index.css',
-  'node_modules/@local/wercker-animations/index.css',
-  'node_modules/@local/wercker-colors/index.css',
-  'node_modules/@local/wercker-typography/index.css',
-  'local_modules/**/*.css'
+  'node_modules/@wrk/wercker-animations/index.css',
+  'node_modules/@wrk/wercker-colors/index.css',
+  'node_modules/@wrk/wercker-typography/index.css',
+  'node_modules/@wrk-docs/**/*.css'
 ];
 
 /**
@@ -104,7 +104,7 @@ gulp.task('docs', function() {
     }))
     .use(templates({
       engine: 'mustache',
-      directory: 'node_modules/@local/template'
+      directory: 'node_modules/@wrk-docs/template'
     }))
     .use(lunr())
 
@@ -141,7 +141,7 @@ gulp.task('lint', function() {
 gulp.task('watch', function() {
   gulp.watch(['/build/**']).on('change', livereload.changed);
   gulp.watch(jsFiles, [/*'lint',*/ 'modules']);
-  gulp.watch([docs, 'local_modules/template/*'], ['docs']);
+  gulp.watch([docs, './template/*'], ['docs']);
   gulp.watch(styleFiles, ['styles']);
   livereload.listen();
 });
