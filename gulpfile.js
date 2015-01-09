@@ -82,6 +82,40 @@ gulp.task('styles', function() {
 });
 
 /**
+ * Build a template.
+ * TODO: move to module.
+ *
+ * @param {String} tn
+ * @api private
+ */
+function buildTemplate(tn) {
+  assert('string' == typeof tn, 'TemplateName should be a string');
+
+  var outDir = 'index' == tn ? '' : tn;
+  var templateDir = 'lib/' + tn;
+
+  gulp.src(docs[tn])
+    .pipe(frontMatter())
+    .on('data', parseFile)
+    .pipe(metalPipe())
+    .pipe(gulp.dest('./build/' + outDir));
+
+  function metalPipe() {
+    return gulpsmith()
+      .use(highlight())
+      .use(markdown({smartypants: true, gfm: true}))
+      .use(templates({engine: 'mustache', directory: templateDir}));
+  }
+
+  function parseFile(file) {
+    assign(file, {template: 'index.html'});
+    console.log(Object.keys(file.toJSON()))
+    delete file.frontMatter;
+  }
+
+}
+
+/**
  * Compile JS
  */
 gulp.task('modules', function() {
@@ -131,6 +165,7 @@ gulp.task('lint', function() {
   var args = [
     path.join(__dirname, './node_modules/.bin/eslint'),
     '.'
+
   ];
   spawn(process.argv[0], args, {stdio: [0,1,2], env: childProcess.env});
 });
@@ -172,38 +207,3 @@ gulp.task('default', [
   'build',
   'watch'
 ]);
-
-/**
- * Build a template.
- * TODO: move to module.
- *
- * @param {String} tn
- * @api private
- */
-function buildTemplate(tn) {
-  assert('string' == typeof tn, 'TemplateName should be a string');
-
-  var outDir = 'index' == tn ? '' : tn;
-
-  var metalPipe = gulpsmith()
-    .use(highlight())
-    .use(markdown({
-      smartypants: true,
-      gfm: true
-    }))
-    .use(templates({
-      engine: 'mustache',
-      directory: 'lib/' + tn
-    }));
-
-  function parseFile(file) {
-    assign(file, {template: 'index.html'});
-    delete file.frontMatter;
-  }
-
-  gulp
-    .src(docs[tn])
-    .pipe(frontMatter()).on('data', parseFile)
-    .pipe(metalPipe)
-    .pipe(gulp.dest('./build/' + outDir));
-}
