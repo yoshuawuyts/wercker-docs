@@ -1,23 +1,22 @@
 /**
- * Animations.
- */
-
-/**
  * Duration scale.
  */
-
-$duration_slowest:       .6s;
-$duration_slow:          .5s;
-$duration_base:          .4s;
-$duration_fast:          .3s;
-$duration_fastest:       .2s;
+:root {
+  --duration_slowest: .6s;
+  --duration_slow: .5s;
+  --duration_base: .4s;
+  --duration_fast: .3s;
+  --duration_fastest: .2s;
+}
 
 /**
  * Easing scale.
  */
+:root {
+  --easing-bounce_smooth: cubic-bezier(.01, .59, .21, 1.08);
+  --easing-bounce_hard: cubic-bezier(.47, -0.01, .23, 1.16);
+  --easing_smooth: cubic-bezier(0.7, 0, 0.3, 1);
+  --easing_base: cubic-bezier(0,.18, 0, .99);
+  --easing_hard: cubic-bezier(0.7, 0, 0.3, 1);
+}
 
-$easing-bounce_smooth:  cubic-bezier(.01, .59, .21, 1.08);
-$easing-bounce_hard:    cubic-bezier(.47, -0.01, .23, 1.16);
-$easing_smooth:         cubic-bezier(0.7, 0, 0.3, 1);
-$easing_base:           cubic-bezier(0,.18, 0, .99);
-$easing_hard:           cubic-bezier(0.7, 0, 0.3, 1);

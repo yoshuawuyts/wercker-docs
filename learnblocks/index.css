@@ -5,7 +5,7 @@
 .learn {
   overflow: hidden;
   padding: 30px 0;
-  background-color: $color-grey_light;
+  background-color: var(--color-grey_light);
 }
 
 .learn h2 {
@@ -32,7 +32,7 @@
   margin: 10px;
   padding-bottom: 0;
   text-align: center;
-  transition: transform $duration_fastest $easing-bounce_smooth;
+  transition: transform var(--duration_fastest) var(--easing-bounce_smooth);
 }
 
 .learnblocks-item.active .learnblocks-item-icon {
@@ -73,10 +73,10 @@
   display: block;
   opacity: 0;
   animation: fade-in;
-  animation-duration: $duration_slowest;
-  animation-delay: $duration_fast;
+  animation-duration: var(--duration_slowest);
+  animation-delay: var(--duration_fast);
   animation-fill-mode: forwards;
-  animation-timing-function: $easing_smooth;
+  animation-timing-function: var(--easing_smooth);
 }
 
 .learnblocks-item_active {
@@ -85,7 +85,7 @@
   width: 10px;
   height: 10px;
   border-radius: 2px;
-  border: 0px solid $color-blue_light;
+  border: 0px solid var(--color-blue_light);
   border-width: 3px 0 0 3px;
   transform: rotate(45deg);
 }
@@ -105,9 +105,9 @@
 .intro .learnblocks-item-icon {
   opacity: 0;
   animation: move-in;
-  animation-duration: $duration_slowest;
+  animation-duration: var(--duration_slowest);
   animation-fill-mode: forwards;
-  animation-timing-function: $easing_smooth;
+  animation-timing-function: var(--easing_smooth);
 }
 
 .learnblocks-item-icon img {
@@ -117,41 +117,41 @@
 .learnblocks-item-title {
   margin-top: 23px;
   text-transform: capitalize;
-  font-size: $fontSize_base;
-  color: $color-white;
+  font-size: var(--fontSize_base);
+  color: var(--color-white);
 }
 
 .learnblocks-item_basics .learnblocks-item-icon {
-  background-color: $color-fuchsia_base;
+  background-color: var(--color-fuchsia_base);
 }
 
 .learnblocks-item_wercker_yml .learnblocks-item-icon {
-  background-color: $color-skyblue_base;
+  background-color: var(--color-skyblue_base);
   animation-delay: .04s;
 }
 
 .learnblocks-item_containers .learnblocks-item-icon {
-  background-color: $color-green_base;
+  background-color: var(--color-green_base);
   animation-delay: .1s;
 }
 
 .learnblocks-item_pipelines .learnblocks-item-icon {
-  background-color: $color-red_base;
+  background-color: var(--color-red_base);
   animation-delay: .14s;
 }
 
 .learnblocks-item_steps .learnblocks-item-icon {
-  background-color: $color-purple_base;
+  background-color: var(--color-purple_base);
   animation-delay: .18s;
 }
 
 .learnblocks-item_build .learnblocks-item-icon {
-  background-color: $color-yellow_base;
+  background-color: var(--color-yellow_base);
   animation-delay: .21s;
 }
 
 .learnblocks-item_deploy .learnblocks-item-icon {
-  background-color: $color-orange_base;
+  background-color: var(--color-orange_base);
   animation-delay: .27s;
 }
 

@@ -15,9 +15,9 @@
   margin-top: 60px;
   width: 200px;
   height: 40px;
-  background-color: $color-red_base;
-  color: $color-white;
-  font-size: $fontSize_small;
+  background-color: var(--color-red_base);
+  color: var(--color-white);
+  font-size: var(--fontSize_small);
   letter-spacing: .5px;
   text-align: center;
   line-height: 40px;

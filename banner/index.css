@@ -13,5 +13,5 @@
   padding: 10px;
   text-align: center;
   border-radius: 2px;
-  background: $color-grey_lighter;
+  background: var(--color-grey_lighter);
 }

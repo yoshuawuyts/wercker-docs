@@ -6,7 +6,7 @@
   position: relative;
   height: 32vh;
   max-height: 250px;
-  background-color: $color-grey_lighter;
+  background-color: var(--color-grey_lighter);
 }
 
 .header h1 {

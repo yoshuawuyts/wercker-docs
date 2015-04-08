@@ -37,16 +37,16 @@
   border-radius: 4px;
   white-space: nowrap;
   font-family: "Consolas", "Liberation Mono", Courier, monospace;
-  background-color: $color-grey_lightest;
-  border: 1px solid $color-grey_lighter;
-  font-weight: $fontWeight_base;
-  font-size: $fontSize_small;
-  color: $color-blue_base;
+  background-color: var(--color-grey_lightest);
+  border: 1px solid var(--color-grey_lighter);
+  font-weight: var(--fontWeight_base);
+  font-size: var(--fontSize_small);
+  color: var(--color-blue_base);
 }
 
 .docs-articles > pre {
-  background-color: $color-blue_base;
-  border: 1px solid $color-grey_light;
+  background-color: var(--color-blue_base);
+  border: 1px solid var(--color-grey_light);
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 20px;
@@ -54,7 +54,7 @@
 }
 
 .docs-articles > pre > code {
-  line-height: $lineHeight_base;
+  line-height: var(--lineHeight_base);
   background-color: transparent;
   overflow-wrap: normal;
   white-space: pre;
@@ -74,19 +74,19 @@
 .docs-articles th,
 .docs-articles td {
   padding: 12px;
-  background-color: $color-grey_lightest;
-  border: 1px solid $color-grey_light;
-  font-weight: $fontWeight_base;
-  line-height: $lineHeight_base;
-  font-size: $fontSize_smaller;
-  color: $color-blue_light;
+  background-color: var(--color-grey_lightest);
+  border: 1px solid var(--color-grey_light);
+  font-weight: var(--fontWeight_base);
+  line-height: var(--lineHeight_base);
+  font-size: var(--fontSize_smaller);
+  color: var(--color-blue_light);
 }
 
 .docs-articles th {
-  font-weight: $fontWeight_semibold;
-  line-height: $lineHeight_base;
-  font-size: $fontSize_small;
-  color: $color-blue_light;
+  font-weight: var(--fontWeight_semibold);
+  line-height: var(--lineHeight_base);
+  font-size: var(--fontSize_small);
+  color: var(--color-blue_light);
 }
 
 /**
@@ -97,15 +97,15 @@
 .docs-articles > ol {
   margin-top: 5px;
   margin-left: 10px;
-  line-height: $lineHeight_loose;
-  color: $color-grey_base;
+  line-height: var(--lineHeight_loose);
+  color: var(--color-grey_base);
   list-style: none;
 }
 
 .docs-articles > ul li:before,
 .docs-articles > ol li:before {
   content: "• ";
-  color: $color-blue_light;
+  color: var(--color-blue_light);
 }
 
 /**
@@ -116,7 +116,7 @@
 .docs-articles a > img {
   max-width: 100%;
   margin-top: 20px;
-  border: 1px solid $color-grey_lighter;
+  border: 1px solid var(--color-grey_lighter);
 }
 
 
@@ -136,7 +136,7 @@
 blockquote {
   margin-top: 30px;
   padding-left: 30px;
-  border-left: 1px solid $color-red_base;
+  border-left: 1px solid var(--color-red_base);
 }
 
 blockquote > p {
@@ -144,10 +144,10 @@ blockquote > p {
 }
 
 blockquote  p {
-  font-size: $fontSize_small;
-  color: $color-grey_base;
-  font-weight: $fontWeight_light;
-  line-height: $lineHeight_loose;
+  font-size: var(--fontSize_small);
+  color: var(--color-grey_base);
+  font-weight: var(--fontWeight_light);
+  line-height: var(--lineHeight_loose);
   font-style: italic;
 }
 
@@ -163,8 +163,8 @@ hr + blockquote {
 hr + blockquote > p{
   margin: 0;
   padding: 10px;
-  border: 1px solid $color-grey_lighter;
-  background-color: $color-grey_lightest;
+  border: 1px solid var(--color-grey_lighter);
+  background-color: var(--color-grey_lightest);
   border-radius: 4px;
 }
 
@@ -175,108 +175,108 @@ hr + blockquote > p{
 .docs-articles.docs-articles_learn > p:last-child  {
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px solid $color-grey_light;
+  border-top: 1px solid var(--color-grey_light);
 }
 
 .docs-articles.docs-articles_learn a[title~="next"] {
   float: right;
-  font-weight: $fontWeight_semibold;
-  font-size: $fontSize_base;
+  font-weight: var(--fontWeight_semibold);
+  font-size: var(--fontSize_base);
 }
 
 .docs-articles.docs-articles_learn a[title~="previous"] {
   float: left;
-  font-weight: $fontWeight_semibold;
-  font-size: $fontSize_base;
+  font-weight: var(--fontWeight_semibold);
+  font-size: var(--fontSize_base);
 }
 
 .docs-articles.docs-articles_learn a[title~="nav"] {
   border-radius: 2px;
   padding: 10px 14px;
-  color: $color-grey_lighter;
-  font-size: $fontSize_small;
-  font-weight: $fontWeight_base;
+  color: var(--color-grey_lighter);
+  font-size: var(--fontSize_small);
+  font-weight: var(--fontWeight_base);
   text-decoration: none;
-  transition: all $duration_fastest $easing_smooth;
+  transition: all var(--duration_fastest) var(--easing_smooth);
 }
 
 .docs-articles.docs-articles_learn a[title~="basics"] {
-  box-shadow: inset 0 0 0 2px $color-fuchsia_base;
-  background-color: $color-fuchsia_base;
+  box-shadow: inset 0 0 0 2px var(--color-fuchsia_base);
+  background-color: var(--color-fuchsia_base);
 }
 
 .docs-articles.docs-articles_learn a[title~="basics"]:hover {
-  color: $color-fuchsia_base;
+  color: var(--color-fuchsia_base);
   background-color: transparent;
 }
 
 .docs-articles.docs-articles_learn a[title~="yml"] {
-  box-shadow: inset 0 0 0 2px $color-skyblue_base;
-  background-color: $color-skyblue_base;
+  box-shadow: inset 0 0 0 2px var(--color-skyblue_base);
+  background-color: var(--color-skyblue_base);
 }
 
 .docs-articles.docs-articles_learn a[title~="yml"]:hover {
-  color: $color-skyblue_base;
+  color: var(--color-skyblue_base);
   background-color: transparent;
 }
 
 .docs-articles.docs-articles_learn a[title~="containers"] {
-  box-shadow: inset 0 0 0 2px $color-green_base;
-  background-color: $color-green_base;
+  box-shadow: inset 0 0 0 2px var(--color-green_base);
+  background-color: var(--color-green_base);
 }
 
 .docs-articles.docs-articles_learn a[title~="containers"]:hover {
-  color: $color-green_base;
+  color: var(--color-green_base);
   background-color: transparent;
 }
 
 .docs-articles.docs-articles_learn a[title~="pipelines"] {
-  box-shadow: inset 0 0 0 2px $color-red_base;
-  background-color: $color-red_base;
+  box-shadow: inset 0 0 0 2px var(--color-red_base);
+  background-color: var(--color-red_base);
 }
 
 .docs-articles.docs-articles_learn a[title~="pipelines"]:hover {
-  color: $color-red_base;
+  color: var(--color-red_base);
   background-color: transparent;
 }
 
 .docs-articles.docs-articles_learn a[title~="steps"] {
-  box-shadow: inset 0 0 0 2px $color-purple_base;
-  background-color: $color-purple_base;
+  box-shadow: inset 0 0 0 2px var(--color-purple_base);
+  background-color: var(--color-purple_base);
 }
 
 .docs-articles.docs-articles_learn a[title~="steps"]:hover {
-  color: $color-purple_base;
+  color: var(--color-purple_base);
   background-color: transparent;
 }
 
 .docs-articles.docs-articles_learn a[title~="build"] {
-  color: $color-white;
-  box-shadow: inset 0 0 0 2px $color-yellow_dark;
-  background-color: $color-yellow_dark;
+  color: var(--color-white);
+  box-shadow: inset 0 0 0 2px var(--color-yellow_dark);
+  background-color: var(--color-yellow_dark);
 }
 
 .docs-articles.docs-articles_learn a[title~="build"]:hover {
-  color: $color-yellow_dark;
+  color: var(--color-yellow_dark);
   background-color: transparent;
 }
 
 .docs-articles.docs-articles_learn a[title~="deploy"] {
-  box-shadow: inset 0 0 0 2px $color-orange_base;
-  background-color: $color-orange_base;
+  box-shadow: inset 0 0 0 2px var(--color-orange_base);
+  background-color: var(--color-orange_base);
 }
 
 .docs-articles.docs-articles_learn a[title~="deploy"]:hover {
-  color: $color-orange_base;
+  color: var(--color-orange_base);
   background-color: transparent;
 }
 
 .docs-articles.docs-articles_learn a[title~="docs"] {
-  box-shadow: inset 0 0 0 2px $color-blue_light;
-  background-color: $color-blue_light;
+  box-shadow: inset 0 0 0 2px var(--color-blue_light);
+  background-color: var(--color-blue_light);
 }
 
 .docs-articles.docs-articles_learn a[title~="docs"]:hover {
-  color: $color-blue_light;
+  color: var(--color-blue_light);
   background-color: transparent;
 }

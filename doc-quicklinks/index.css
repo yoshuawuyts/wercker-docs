@@ -24,14 +24,14 @@
 }
 
 .doc-quicklinks-item ul {
-  line-height: $lineHeight_loose;
-  font-size: $fontSize-base;
-  color: $color-grey_base;
+  line-height: var(--lineHeight_loose);
+  font-size: var(--fontSize_base);
+  color: var(--color-grey_base);
   list-style: none;
   margin-bottom: 60px;
 }
 
 .doc-quicklinks-item li:before {
   content: " ";
-  color: $color-blue_light;
+  color: var(--color-blue_light);
 }

@@ -11,19 +11,19 @@
 .section-sidebar {
   padding-top: 20px;
   padding-right: 20px;
-  border-right: 1px solid $color-grey_light;
-  line-height: $lineHeight_loose;
+  border-right: 1px solid var(--color-grey_light);
+  line-height: var(--lineHeight_loose);
 }
 
 .sidebar-li,
 .sidebar-li > a {
   margin-top: 25px;
-  font-size: $fontSize_base;
+  font-size: var(--fontSize_base);
   text-transform: capitalize;
-  font-weight: $fontWeight_base;
-  line-height: $lineHeight_loose;
+  font-weight: var(--fontWeight_base);
+  line-height: var(--lineHeight_loose);
   font-family: 'Open Sans', sans-serif;
-  color: $color-blue_base;
+  color: var(--color-blue_base);
   text-decoration: none;
 }
 
@@ -39,7 +39,7 @@
 .sidebar-li_sub.active > a {
   text-decoration: none;
   pointer-events: none;
-  color: $color-skyblue_dark;
+  color: var(--color-skyblue_dark);
 }
 
 .sidebar-li_sub.active > a:before {
@@ -49,34 +49,34 @@
 .section-learn {
   margin-top: 35px;
   padding: 2px 0 2px 20px;
-  border-left: 2px solid $color-grey_light;
+  border-left: 2px solid var(--color-grey_light);
   border-right: none;
 }
 
 .section-sidebar_basics {
-  border-color: $color-fuchsia_base;
+  border-color: var(--color-fuchsia_base);
 }
 
 .section-sidebar_wercker-yml {
-  border-color: $color-skyblue_base;
+  border-color: var(--color-skyblue_base);
 }
 
 .section-sidebar_containers {
-  border-color: $color-green_base;
+  border-color: var(--color-green_base);
 }
 
 .section-sidebar_pipelines {
-  border-color: $color-red_base;
+  border-color: var(--color-red_base);
 }
 
 .section-sidebar_steps {
-  border-color: $color-purple_base;
+  border-color: var(--color-purple_base);
 }
 
 .section-sidebar_build {
-  border-color: $color-yellow_base;
+  border-color: var(--color-yellow_base);
 }
 
 .section-sidebar_deploy {
-  border-color: $color-orange_base;
+  border-color: var(--color-orange_base);
 }

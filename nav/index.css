@@ -4,7 +4,7 @@
 
 .nav-sticky {
   min-height: 60px;
-  background-color: $color-grey_lighter;
+  background-color: var(--color-grey_lighter);
 }
 
 .navbar-container {
@@ -17,12 +17,12 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: $color-blue_base;
-  transition: background-color $duration_fast $easing_smooth;
+  background-color: var(--color-blue_base);
+  transition: background-color var(--duration_fast) var(--easing_smooth);
 }
 
 .navbar-container.navbar-floating {
-  background-color: $color-blue_base;
+  background-color: var(--color-blue_base);
 }
 
 .navbar {
@@ -37,16 +37,16 @@
 
 .navbar-item {
   margin-right: 15px;
-  color: $color-blue_light;
-  font-size: $fontSize_base;
-  font-weight: $fontWeight_light;
+  color: var(--color-blue_light);
+  font-size: var(--fontSize_base);
+  font-weight: var(--fontWeight_light);
   line-height: 4px;
   text-decoration: none;
   float: left;
 }
 
 .navbar-item:hover {
-  color: $color-blue_base;
+  color: var(--color-blue_base);
 }
 
 .navbar-item_right {
@@ -54,11 +54,11 @@
 }
 
 .navbar-floating .navbar-item {
-  color: $color-white;
+  color: var(--color-white);
 }
 
 .navbar-item_active {
-  font-weight: $fontWeight_bold;
+  font-weight: var(--fontWeight_bold);
   opacity: 1;
 }
 
@@ -102,11 +102,11 @@
 }
 
 .logo-group path {
-  fill: $color-blue_base;
+  fill: var(--color-blue_base);
 }
 
 .navbar-floating .logo-group path {
-  fill: $color-white;
+  fill: var(--color-white);
 }
 
 /**
@@ -117,16 +117,16 @@
   float: right;
   border-radius: 2px;
   padding: 10px 14px;
-  background-color: $color-green_base;
-  color: $color-grey_lighter;
-  font-size: $fontSize_small;
-  font-weight: $fontWeight_base;
+  background-color: var(--color-green_base);
+  color: var(--color-grey_lighter);
+  font-size: var(--fontSize_small);
+  font-weight: var(--fontWeight_base);
   text-decoration: none;
-  box-shadow: inset 0 0 0 2px $color-green_base;
-  transition: all $duration_fastest $easing_smooth;
+  box-shadow: inset 0 0 0 2px var(--color-green_base);
+  transition: all var(--duration_fastest) var(--easing_smooth);
 }
 
 .button-nav_signup:hover {
-  color: $color-green_base;
+  color: var(--color-green_base);
   background-color: transparent;
 }

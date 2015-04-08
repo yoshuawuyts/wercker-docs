@@ -14,7 +14,6 @@ var flatten     = require('gulp-flatten');
 var concat      = require('gulp-concat');
 var browserify  = require('browserify');
 var gulpsmith   = require('gulpsmith');
-var sass        = require('gulp-sass');
 var myth        = require('gulp-myth');
 var assert      = require('assert');
 var gulp        = require('gulp');
@@ -54,14 +53,7 @@ var docs = {
   ]
 };
 
-var styleFiles = [
-  'node_modules/css-wipe/index.css',
-  'node_modules/@local/wercker-animations/index.css',
-  'node_modules/@local/wercker-colors/index.css',
-  'node_modules/@local/wercker-fonts/index.css',
-  'node_modules/@local/wercker-typography/index.css',
-  // '**/*.css'
-];
+var styleFiles = ['index.css'];
 
 var imageFiles = [
   '**/*.jpg',
@@ -90,7 +82,6 @@ gulp.task('styles', function() {
     .src(styleFiles)
     .pipe(concat('build.css'))
     .pipe(myth())
-    .pipe(sass())
     .pipe(gulp.dest(path.join(__dirname, '/build/')));
 });
 

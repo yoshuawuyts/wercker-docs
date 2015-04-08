@@ -5,7 +5,7 @@
 .page-not-found {
   height: 50vh;
   min-height: 400px;
-  background-color: $color-grey_lighter;
+  background-color: var(--color-grey_lighter);
 }
 
 .page-not-found-content {
@@ -24,7 +24,7 @@
 .page-not-found-links li {
   display: inline;
   margin-right: 10px;
-  font-size: $fontSize_smaller;
-  color: $color-grey_light;
-  font-weight: $fontWeight_light;
+  font-size: var(--fontSize_smaller);
+  color: var(--color-grey_light);
+  font-weight: var(--fontWeight_light);
 }
