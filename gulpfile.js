@@ -27,8 +27,9 @@ module.exports = gulp;
  */
 var jsFiles = [
   '*.js*',
-  'local_modules/**/*.js*',
-  '!local_modules/**/node_modules/*.js*'
+  '**/*.js*',
+  '!node_modules/**/*.js',
+  '!**/node_modules/*.js*'
 ];
 
 var moduleEntryPoint = [
@@ -59,15 +60,15 @@ var styleFiles = [
   'node_modules/@local/wercker-colors/index.css',
   'node_modules/@local/wercker-fonts/index.css',
   'node_modules/@local/wercker-typography/index.css',
-  'local_modules/**/*.css'
+  // '**/*.css'
 ];
 
 var imageFiles = [
-  'local_modules/**/*.jpg',
-  'local_modules/**/*.png',
-  'local_modules/**/*.gif',
-  'local_modules/**/*.svg',
-  'local_modules/**/*.ico',
+  '**/*.jpg',
+  '**/*.png',
+  '**/*.gif',
+  '**/*.svg',
+  '**/*.ico',
   'lib/**/*.jpg',
   'lib/**/*.png',
   'lib/**/*.gif',
@@ -75,10 +76,10 @@ var imageFiles = [
 ];
 
 var fontFiles = [
-  'local_modules/**/*.eot',
-  'local_modules/**/*.ttf',
-  'local_modules/**/*.woff',
-  'local_modules/**/*.woff2'
+  '**/*.eot',
+  '**/*.ttf',
+  '**/*.woff',
+  '**/*.woff2'
 ];
 
 /**
