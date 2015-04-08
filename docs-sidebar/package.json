@@ -1,0 +1,8 @@
+{
+  "name": "@docs/sidebar",
+  "version": "1.0.0",
+  "repository": "@docs",
+  "browserify": {
+    "transform": ["es6ify"]
+  }
+}

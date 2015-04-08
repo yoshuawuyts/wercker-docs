@@ -1,7 +1,7 @@
 {
-  "name": "@local/react-icon",
+  "name": "@react/icon",
   "version": "1.0.0",
-  "repository": "@local",
+  "repository": "@react",
   "description": "Local module",
   "README": ""
 }

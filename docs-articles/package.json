@@ -1,0 +1,6 @@
+{
+  "name": "@docs/articles",
+  "version": "1.0.0",
+  "repository": "@local",
+  "main": "index.css"
+}

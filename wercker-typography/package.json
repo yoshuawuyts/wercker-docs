@@ -1,5 +1,5 @@
 {
-  "name": "@local/wercker-typography",
-  "repository": "@local",
+  "name": "@wercker/typography",
+  "repository": "@wercker",
   "version": "1.0.0"
 }

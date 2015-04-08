@@ -1,0 +1,14 @@
+{
+  "name": "@legacy/urls",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Small util to add redirect markers",
+  "main": "index.js",
+  "author": "wercker",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1.17",
+    "minimist": "^1.1.1",
+    "split": "^0.3.3"
+  }
+}

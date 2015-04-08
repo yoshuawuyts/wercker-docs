@@ -48,7 +48,7 @@ deploy:
         - script:
             name: add redirect files
             code: |
-                cd legacy_urls
+                cd legacy-urls
                 npm install
                 node ./index.js
 
